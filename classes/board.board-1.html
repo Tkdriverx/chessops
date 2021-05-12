@@ -1,0 +1,918 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Board | chessops</title>
+	<meta name="description" content="Documentation for chessops">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">chessops</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">chessops</a>
+				</li>
+				<li>
+					<a href="../modules/board.html">board</a>
+				</li>
+				<li>
+					<a href="board.board-1.html">Board</a>
+				</li>
+			</ul>
+			<h1>Class Board</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Piece positions on a board.</p>
+					</div>
+					<p>Properties are sets of squares, like <code>board.occupied</code> for all occupied
+						squares, <code>board[color]</code> for all pieces of that color, and <code>board[role]</code>
+						for all pieces of that role. When modifying the properties directly, take
+					care to keep them consistent.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Board</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><a href="../modules/types.html#square" class="tsd-signature-type" data-tsd-kind="Type alias">Square</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/types.piece.html" class="tsd-signature-type" data-tsd-kind="Interface">Piece</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><a href="../modules/types.html#byrole" class="tsd-signature-type" data-tsd-kind="Type alias">ByRole</a><span class="tsd-signature-symbol">&lt;</span><a href="squareset.squareset-1.html" class="tsd-signature-type" data-tsd-kind="Class">SquareSet</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><a href="../modules/types.html#bycolor" class="tsd-signature-type" data-tsd-kind="Type alias">ByColor</a><span class="tsd-signature-symbol">&lt;</span><a href="squareset.squareset-1.html" class="tsd-signature-type" data-tsd-kind="Class">SquareSet</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-private"><a href="board.board-1.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="board.board-1.html#bishop" class="tsd-kind-icon">bishop</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="board.board-1.html#black" class="tsd-kind-icon">black</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="board.board-1.html#king" class="tsd-kind-icon">king</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="board.board-1.html#knight" class="tsd-kind-icon">knight</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="board.board-1.html#occupied" class="tsd-kind-icon">occupied</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="board.board-1.html#pawn" class="tsd-kind-icon">pawn</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="board.board-1.html#promoted" class="tsd-kind-icon">promoted</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="board.board-1.html#queen" class="tsd-kind-icon">queen</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="board.board-1.html#rook" class="tsd-kind-icon">rook</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="board.board-1.html#white" class="tsd-kind-icon">white</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="board.board-1.html#_symbol_iterator_" class="tsd-kind-icon">[<wbr>Symbol.iterator]</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="board.board-1.html#bishopsandqueens" class="tsd-kind-icon">bishops<wbr>And<wbr>Queens</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="board.board-1.html#clear" class="tsd-kind-icon">clear</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="board.board-1.html#clone" class="tsd-kind-icon">clone</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="board.board-1.html#equals" class="tsd-kind-icon">equals</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="board.board-1.html#equalsignorepromoted" class="tsd-kind-icon">equals<wbr>Ignore<wbr>Promoted</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="board.board-1.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="board.board-1.html#getcolor" class="tsd-kind-icon">get<wbr>Color</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="board.board-1.html#getrole" class="tsd-kind-icon">get<wbr>Role</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="board.board-1.html#has" class="tsd-kind-icon">has</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="board.board-1.html#kingof" class="tsd-kind-icon">king<wbr>Of</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="board.board-1.html#pieces" class="tsd-kind-icon">pieces</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="board.board-1.html#reset" class="tsd-kind-icon">reset</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="board.board-1.html#rooksandqueens" class="tsd-kind-icon">rooks<wbr>And<wbr>Queens</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="board.board-1.html#set" class="tsd-kind-icon">set</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="board.board-1.html#take" class="tsd-kind-icon">take</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="board.board-1.html#default" class="tsd-kind-icon">default</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="board.board-1.html#empty" class="tsd-kind-icon">empty</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="board.board-1.html#horde" class="tsd-kind-icon">horde</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="board.board-1.html#racingkings" class="tsd-kind-icon">racing<wbr>Kings</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Board<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="board.board-1.html" class="tsd-signature-type" data-tsd-kind="Class">Board</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L31">src/board.ts:31</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="board.board-1.html" class="tsd-signature-type" data-tsd-kind="Class">Board</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="bishop" class="tsd-anchor"></a>
+					<h3>bishop</h3>
+					<div class="tsd-signature tsd-kind-icon">bishop<span class="tsd-signature-symbol">:</span> <a href="squareset.squareset-1.html" class="tsd-signature-type" data-tsd-kind="Class">SquareSet</a></div>
+					<aside class="tsd-sources">
+						<p>Implementation of ByRole.bishop</p>
+						<ul>
+							<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L28">src/board.ts:28</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="black" class="tsd-anchor"></a>
+					<h3>black</h3>
+					<div class="tsd-signature tsd-kind-icon">black<span class="tsd-signature-symbol">:</span> <a href="squareset.squareset-1.html" class="tsd-signature-type" data-tsd-kind="Class">SquareSet</a></div>
+					<aside class="tsd-sources">
+						<p>Implementation of ByColor.black</p>
+						<ul>
+							<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L24">src/board.ts:24</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="king" class="tsd-anchor"></a>
+					<h3>king</h3>
+					<div class="tsd-signature tsd-kind-icon">king<span class="tsd-signature-symbol">:</span> <a href="squareset.squareset-1.html" class="tsd-signature-type" data-tsd-kind="Class">SquareSet</a></div>
+					<aside class="tsd-sources">
+						<p>Implementation of ByRole.king</p>
+						<ul>
+							<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L31">src/board.ts:31</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="knight" class="tsd-anchor"></a>
+					<h3>knight</h3>
+					<div class="tsd-signature tsd-kind-icon">knight<span class="tsd-signature-symbol">:</span> <a href="squareset.squareset-1.html" class="tsd-signature-type" data-tsd-kind="Class">SquareSet</a></div>
+					<aside class="tsd-sources">
+						<p>Implementation of ByRole.knight</p>
+						<ul>
+							<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L27">src/board.ts:27</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="occupied" class="tsd-anchor"></a>
+					<h3>occupied</h3>
+					<div class="tsd-signature tsd-kind-icon">occupied<span class="tsd-signature-symbol">:</span> <a href="squareset.squareset-1.html" class="tsd-signature-type" data-tsd-kind="Class">SquareSet</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L16">src/board.ts:16</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>All occupied squares.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="pawn" class="tsd-anchor"></a>
+					<h3>pawn</h3>
+					<div class="tsd-signature tsd-kind-icon">pawn<span class="tsd-signature-symbol">:</span> <a href="squareset.squareset-1.html" class="tsd-signature-type" data-tsd-kind="Class">SquareSet</a></div>
+					<aside class="tsd-sources">
+						<p>Implementation of ByRole.pawn</p>
+						<ul>
+							<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L26">src/board.ts:26</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="promoted" class="tsd-anchor"></a>
+					<h3>promoted</h3>
+					<div class="tsd-signature tsd-kind-icon">promoted<span class="tsd-signature-symbol">:</span> <a href="squareset.squareset-1.html" class="tsd-signature-type" data-tsd-kind="Class">SquareSet</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L21">src/board.ts:21</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>All squares occupied by pieces known to be promoted. This information is
+							relevant in chess variants like Crazyhouse.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="queen" class="tsd-anchor"></a>
+					<h3>queen</h3>
+					<div class="tsd-signature tsd-kind-icon">queen<span class="tsd-signature-symbol">:</span> <a href="squareset.squareset-1.html" class="tsd-signature-type" data-tsd-kind="Class">SquareSet</a></div>
+					<aside class="tsd-sources">
+						<p>Implementation of ByRole.queen</p>
+						<ul>
+							<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L30">src/board.ts:30</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="rook" class="tsd-anchor"></a>
+					<h3>rook</h3>
+					<div class="tsd-signature tsd-kind-icon">rook<span class="tsd-signature-symbol">:</span> <a href="squareset.squareset-1.html" class="tsd-signature-type" data-tsd-kind="Class">SquareSet</a></div>
+					<aside class="tsd-sources">
+						<p>Implementation of ByRole.rook</p>
+						<ul>
+							<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L29">src/board.ts:29</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="white" class="tsd-anchor"></a>
+					<h3>white</h3>
+					<div class="tsd-signature tsd-kind-icon">white<span class="tsd-signature-symbol">:</span> <a href="squareset.squareset-1.html" class="tsd-signature-type" data-tsd-kind="Class">SquareSet</a></div>
+					<aside class="tsd-sources">
+						<p>Implementation of ByColor.white</p>
+						<ul>
+							<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L23">src/board.ts:23</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="_symbol_iterator_" class="tsd-anchor"></a>
+					<h3>[<wbr>Symbol.iterator]</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">[<wbr>Symbol.iterator]<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/types.piece.html" class="tsd-signature-type" data-tsd-kind="Interface">Piece</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of Iterable.__@iterator</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L170">src/board.ts:170</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/types.piece.html" class="tsd-signature-type" data-tsd-kind="Interface">Piece</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="bishopsandqueens" class="tsd-anchor"></a>
+					<h3>bishops<wbr>And<wbr>Queens</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">bishops<wbr>And<wbr>Queens<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="squareset.squareset-1.html" class="tsd-signature-type" data-tsd-kind="Class">SquareSet</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L184">src/board.ts:184</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="squareset.squareset-1.html" class="tsd-signature-type" data-tsd-kind="Class">SquareSet</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clear" class="tsd-anchor"></a>
+					<h3>clear</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L93">src/board.ts:93</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clone" class="tsd-anchor"></a>
+					<h3>clone</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="board.board-1.html" class="tsd-signature-type" data-tsd-kind="Class">Board</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L100">src/board.ts:100</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="board.board-1.html" class="tsd-signature-type" data-tsd-kind="Class">Board</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="equals" class="tsd-anchor"></a>
+					<h3>equals</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">equals<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="board.board-1.html" class="tsd-signature-type" data-tsd-kind="Class">Board</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L114">src/board.ts:114</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>other: <a href="board.board-1.html" class="tsd-signature-type" data-tsd-kind="Class">Board</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="equalsignorepromoted" class="tsd-anchor"></a>
+					<h3>equals<wbr>Ignore<wbr>Promoted</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">equals<wbr>Ignore<wbr>Promoted<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="board.board-1.html" class="tsd-signature-type" data-tsd-kind="Class">Board</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L109">src/board.ts:109</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>other: <a href="board.board-1.html" class="tsd-signature-type" data-tsd-kind="Class">Board</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="get" class="tsd-anchor"></a>
+					<h3>get</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>square<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/types.piece.html" class="tsd-signature-type" data-tsd-kind="Interface">Piece</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L131">src/board.ts:131</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>square: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/types.piece.html" class="tsd-signature-type" data-tsd-kind="Interface">Piece</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getcolor" class="tsd-anchor"></a>
+					<h3>get<wbr>Color</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Color<span class="tsd-signature-symbol">(</span>square<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;white&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;black&quot;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L118">src/board.ts:118</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>square: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;white&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;black&quot;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getrole" class="tsd-anchor"></a>
+					<h3>get<wbr>Role</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Role<span class="tsd-signature-symbol">(</span>square<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pawn&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;knight&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;bishop&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;rook&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;queen&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;king&quot;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L124">src/board.ts:124</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>square: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pawn&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;knight&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;bishop&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;rook&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;queen&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;king&quot;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="has" class="tsd-anchor"></a>
+					<h3>has</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">has<span class="tsd-signature-symbol">(</span>square<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L166">src/board.ts:166</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>square: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="kingof" class="tsd-anchor"></a>
+					<h3>king<wbr>Of</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">king<wbr>Of<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;white&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;black&quot;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L191">src/board.ts:191</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Finds the unique unpromoted king of the given <code>color</code>, if any.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>color: <span class="tsd-signature-type">&quot;white&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;black&quot;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="pieces" class="tsd-anchor"></a>
+					<h3>pieces</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">pieces<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;white&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;black&quot;</span>, role<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;pawn&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;knight&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;bishop&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;rook&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;queen&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;king&quot;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="squareset.squareset-1.html" class="tsd-signature-type" data-tsd-kind="Class">SquareSet</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L176">src/board.ts:176</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>color: <span class="tsd-signature-type">&quot;white&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;black&quot;</span></h5>
+								</li>
+								<li>
+									<h5>role: <span class="tsd-signature-type">&quot;pawn&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;knight&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;bishop&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;rook&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;queen&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;king&quot;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="squareset.squareset-1.html" class="tsd-signature-type" data-tsd-kind="Class">SquareSet</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="reset" class="tsd-anchor"></a>
+					<h3>reset</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">reset<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L74">src/board.ts:74</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Resets all pieces to the default starting position for standard chess.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="rooksandqueens" class="tsd-anchor"></a>
+					<h3>rooks<wbr>And<wbr>Queens</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">rooks<wbr>And<wbr>Queens<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="squareset.squareset-1.html" class="tsd-signature-type" data-tsd-kind="Class">SquareSet</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L180">src/board.ts:180</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="squareset.squareset-1.html" class="tsd-signature-type" data-tsd-kind="Class">SquareSet</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="set" class="tsd-anchor"></a>
+					<h3>set</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>square<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, piece<span class="tsd-signature-symbol">: </span><a href="../interfaces/types.piece.html" class="tsd-signature-type" data-tsd-kind="Interface">Piece</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/types.piece.html" class="tsd-signature-type" data-tsd-kind="Interface">Piece</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L157">src/board.ts:157</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Put <code>piece</code> onto <code>square</code>, potentially replacing an existing piece.
+									Returns the existing piece, if any.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>square: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>piece: <a href="../interfaces/types.piece.html" class="tsd-signature-type" data-tsd-kind="Interface">Piece</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/types.piece.html" class="tsd-signature-type" data-tsd-kind="Interface">Piece</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="take" class="tsd-anchor"></a>
+					<h3>take</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">take<span class="tsd-signature-symbol">(</span>square<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/types.piece.html" class="tsd-signature-type" data-tsd-kind="Interface">Piece</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L142">src/board.ts:142</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes and returns the piece from the given <code>square</code>, if any.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>square: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/types.piece.html" class="tsd-signature-type" data-tsd-kind="Interface">Piece</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="default" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> default</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">default<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="board.board-1.html" class="tsd-signature-type" data-tsd-kind="Class">Board</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L35">src/board.ts:35</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="board.board-1.html" class="tsd-signature-type" data-tsd-kind="Class">Board</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="empty" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> empty</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">empty<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="board.board-1.html" class="tsd-signature-type" data-tsd-kind="Class">Board</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L87">src/board.ts:87</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="board.board-1.html" class="tsd-signature-type" data-tsd-kind="Class">Board</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="horde" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> horde</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">horde<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="board.board-1.html" class="tsd-signature-type" data-tsd-kind="Class">Board</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L56">src/board.ts:56</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="board.board-1.html" class="tsd-signature-type" data-tsd-kind="Class">Board</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="racingkings" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> racing<wbr>Kings</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">racing<wbr>Kings<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="board.board-1.html" class="tsd-signature-type" data-tsd-kind="Class">Board</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/niklasf/chessops/blob/480b274/src/board.ts#L41">src/board.ts:41</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="board.board-1.html" class="tsd-signature-type" data-tsd-kind="Class">Board</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Modules</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/attacks.html">attacks</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/board.html">board</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/chess.html">chess</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/compat.html">compat</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/debug.html">debug</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/fen.html">fen</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/hash.html">hash</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/san.html">san</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/setup.html">setup</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/squareset.html">square<wbr>Set</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/transform.html">transform</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/types.html">types</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/util.html">util</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/variant.html">variant</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="board.board-1.html" class="tsd-kind-icon">Board</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
+								<a href="board.board-1.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="board.board-1.html#bishop" class="tsd-kind-icon">bishop</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="board.board-1.html#black" class="tsd-kind-icon">black</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="board.board-1.html#king" class="tsd-kind-icon">king</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="board.board-1.html#knight" class="tsd-kind-icon">knight</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="board.board-1.html#occupied" class="tsd-kind-icon">occupied</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="board.board-1.html#pawn" class="tsd-kind-icon">pawn</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="board.board-1.html#promoted" class="tsd-kind-icon">promoted</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="board.board-1.html#queen" class="tsd-kind-icon">queen</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="board.board-1.html#rook" class="tsd-kind-icon">rook</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="board.board-1.html#white" class="tsd-kind-icon">white</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="board.board-1.html#_symbol_iterator_" class="tsd-kind-icon">[<wbr>Symbol.iterator]</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="board.board-1.html#bishopsandqueens" class="tsd-kind-icon">bishops<wbr>And<wbr>Queens</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="board.board-1.html#clear" class="tsd-kind-icon">clear</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="board.board-1.html#clone" class="tsd-kind-icon">clone</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="board.board-1.html#equals" class="tsd-kind-icon">equals</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="board.board-1.html#equalsignorepromoted" class="tsd-kind-icon">equals<wbr>Ignore<wbr>Promoted</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="board.board-1.html#get" class="tsd-kind-icon">get</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="board.board-1.html#getcolor" class="tsd-kind-icon">get<wbr>Color</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="board.board-1.html#getrole" class="tsd-kind-icon">get<wbr>Role</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="board.board-1.html#has" class="tsd-kind-icon">has</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="board.board-1.html#kingof" class="tsd-kind-icon">king<wbr>Of</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="board.board-1.html#pieces" class="tsd-kind-icon">pieces</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="board.board-1.html#reset" class="tsd-kind-icon">reset</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="board.board-1.html#rooksandqueens" class="tsd-kind-icon">rooks<wbr>And<wbr>Queens</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="board.board-1.html#set" class="tsd-kind-icon">set</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="board.board-1.html#take" class="tsd-kind-icon">take</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="board.board-1.html#default" class="tsd-kind-icon">default</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="board.board-1.html#empty" class="tsd-kind-icon">empty</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="board.board-1.html#horde" class="tsd-kind-icon">horde</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="board.board-1.html#racingkings" class="tsd-kind-icon">racing<wbr>Kings</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
